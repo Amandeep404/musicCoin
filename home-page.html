@@ -7,7 +7,8 @@
     <title>MusicCoin-Home-page</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-[#191919]">
@@ -21,7 +22,7 @@
         </div>
 
         <div
-            class="search-sec border-2 rounded-3xl w-[400px] text-lg bg-white border-gray-400 text-gray-400 h-10  my-5 relative top-5 right-8 flex">
+            class="search-sec border-2 rounded-3xl w-[400px] text-lg bg-white border-gray-400 text-gray-400 h-10  my-5 relative top-5 right-8 flex items-center">
             <i class='bx bx-search-alt-2 text-3xl my-1.5 ml-2 text-black'></i>
             <input type="text" placeholder="Search songs, artists podcasts you love! "
                 class="bg-white w-[450px] mx-4 outline-none text-black">
@@ -30,123 +31,13 @@
         <div class="sections text-white">
             <ul class="flex space-x-8 mr-20">
                 <!-- <li><a href=""></a></li> -->
-                <li class="text-2xl py-5 my-5 font-bold text-gray-300 hover:underline"><a href="">Music</a></li>
-                <li class="text-2xl py-5 my-5 font-bold text-gray-300 hover:underline"><a href="">Podcast</a></li>
-                <li class="text-2xl py-5 my-5 font-bold text-gray-300 hover:underline"><a href="">Background Music</a>
-                </li>
-            </ul>
-        </div>
-        <div class="metamusk-logo  flex justify-between items-center mr-5">
-            <img src="https://img.icons8.com/plasticine/100/null/metamask-logo.png" class="w-10 hover:cursor-pointer" />
-            <!-- <input type="text" placeholder="OX Address" class="bg-[#2f2f2f] rounded-2xl px-2 outline-none text-white "> -->
-            <div class="ox bg-[#2f2f2f] rounded-2xl px-2 outline-none text-white w-36">OX Address</div>
-        </div>
-
-    </nav>
-    <section class="flex flex-col">
-        <div class="main-box w-10/12  h-72 m-auto flex justify-evenly my-10">
-            <div
-                class="sub-box w-[25%] h-72 cursor-pointer hover:bg-[#2f2f2f] ease-out duration-300 hover:scale-110 hover:rounded-tl-2xl hover:rounded-br-2xl">
-                <img src="https://images.unsplash.com/photo-1471478331149-c72f17e33c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl ">
-                <h2 class="title text-2xl text-white font-bold text-center py-4">New Hindi Songs</h2>
-            </div>
-            <div
-                class="sub-box w-[25%] h-72 cursor-pointer hover:bg-[#2f2f2f] ease-out duration-300 hover:scale-110 hover:rounded-tl-2xl hover:rounded-br-2xl">
-                <img src="https://images.unsplash.com/photo-1606614520047-8ad516d9d84b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl ">
-                <h2 class="title text-2xl text-white font-bold text-center py-4">Rock</h2>
-            </div>
-            <div
-                class="sub-box w-[25%] h-72 cursor-pointer hover:bg-[#2f2f2f] ease-out duration-300 hover:scale-110 hover:rounded-tl-2xl hover:rounded-br-2xl">
-                <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl">
-                <h2 class="title text-2xl text-white font-bold text-center py-4">Indie</h2>
-            </div>
-        </div>
-
-        <div class="main-box w-10/12  h-72 m-auto flex justify-evenly my-10">
-            <div
-                class="sub-box w-[25%] h-72 cursor-pointer hover:bg-[#2f2f2f] ease-out duration-300 hover:scale-110 hover:rounded-tl-2xl hover:rounded-br-2xl">
-                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl ">
-                <h2 class="title text-2xl text-white font-bold text-center py-4">Party Hits</h2>
-            </div>
-            <div
-                class="sub-box w-[25%] h-72 cursor-pointer hover:bg-[#2f2f2f] ease-out duration-300 hover:scale-110 hover:rounded-tl-2xl hover:rounded-br-2xl">
-                <img src="https://images.unsplash.com/photo-1487180144351-b8472da7d491?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
-                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl ">
-                <h2 class="title text-2xl text-white font-bold text-center py-4">Chill</h2>
-            </div>
-            <div
-                class="sub-box w-[25%] h-72 cursor-pointer hover:bg-[#2f2f2f] ease-out duration-300 hover:scale-110 hover:rounded-tl-2xl hover:rounded-br-2xl">
-                <img src="https://images.unsplash.com/photo-1465821185615-20b3c2fbf41b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpbGwlMjB3aXRoJTIwbXVzaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl">
-                <h2 class="title text-2xl text-white font-bold text-center py-4">Instumental</h2>
-            </div>
-        </div>
-
-        <div class="main-box w-10/12  h-72 m-auto flex justify-evenly my-10">
-            <div
-                class="sub-box w-[25%] h-72 cursor-pointer hover:bg-[#2f2f2f] ease-out duration-300 hover:scale-110 hover:rounded-tl-2xl hover:rounded-br-2xl">
-                <img src="https://images.unsplash.com/photo-1619622599449-3cdafdce4776?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=962&q=80"
-                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl ">
-                <h2 class="title text-2xl text-white font-bold text-center py-4">R&B</h2>
-            </div>
-            <div
-                class="sub-box w-[25%] h-72 cursor-pointer hover:bg-[#2f2f2f] ease-out duration-300 hover:scale-110 hover:rounded-tl-2xl hover:rounded-br-2xl">
-                <img src="https://images.unsplash.com/photo-1625612446042-afd3fe024131?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGRqfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl ">
-                <h2 class="title text-2xl text-white font-bold text-center py-4">DJ Night</h2>
-            </div>
-            <div
-                class="sub-box w-[25%] h-72 cursor-pointer hover:bg-[#2f2f2f] ease-out duration-300 hover:scale-110 hover:rounded-tl-2xl hover:rounded-br-2xl">
-                <img src="https://images.unsplash.com/photo-1558584673-c834fb1cc3ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2xhc3NpYyUyMG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl">
-                <h2 class="title text-2xl text-white font-bold text-center py-4">Classic</h2>
-            </div>
-        </div>
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>MusicCoin-Home-page</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body class="bg-[#191919]">
-    <script src="script.js "></script>
-
-    <nav class="flex justify-around">
-        <div class="logo text-4xl font-semibold font-mono p-5 mx-10 my-5">
-            <span
-                class="bg-gradient-to-r from-red-500 to-red-700 text-transparent bg-clip-text font-bold cursor-pointer">
-                MusicCoin</span>
-        </div>
-
-        <div
-            class="search-sec border-2 rounded-3xl w-[400px] text-lg bg-white border-gray-400 text-gray-400 h-10  my-5 relative top-5 right-8 flex">
-            <i class='bx bx-search-alt-2 text-3xl my-1.5 ml-2 text-black'></i>
-            <input type="text" placeholder="Search songs, artists podcasts you love! "
-                class="bg-white w-[450px] mx-4 outline-none text-black">
-        </div>
-
-        <div class="sections text-white">
-            <ul class="flex space-x-8 mr-20">
-                <!-- <li><a href=""></a></li> -->
-                <li class="text-2xl py-5 my-5 font-bold ">
-                    <a href=""
+                <li class="text-2xl py-5 my-5 font-bold text-gray-300 "><a href=""
                         class="bg-gradient-to-r from-red-400 to-red-800 text-transparent bg-clip-text font-bold cursor-pointer hover:bg-gradient-to-r hover:from-red-200 hover:to-red-500 ">Music</a>
                 </li>
-                <li class="text-2xl py-5 my-5 font-bold text-gray-300 cursor-pointer hover:underline"><a href=""
-                        class="">Podcast</a>
-                </li>
-                <li class="text-2xl py-5 my-5 font-bold text-gray-300 hover:underline"><a href="">Background Music</a>
+                <li class="text-2xl py-5 my-5 font-bold text-gray-300 hover:underline"><a
+                        href="podcast.html">Podcast</a></li>
+                <li class="text-2xl py-5 my-5 font-bold text-gray-300 hover:underline"><a
+                        href="bg-music.html">Background Music</a>
                 </li>
             </ul>
         </div>
@@ -169,15 +60,19 @@
             </div>
             <div
                 class="sub-box w-[25%] h-72 cursor-pointer hover:bg-[#2f2f2f] ease-out duration-300 hover:scale-110 hover:rounded-tl-2xl hover:rounded-br-2xl">
-                <img src="https://images.unsplash.com/photo-1606614520047-8ad516d9d84b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl ">
-                <h2 class="title text-2xl text-white font-bold text-center py-4">Rock</h2>
+                <a href="rock.html">
+                    <img src="https://images.unsplash.com/photo-1606614520047-8ad516d9d84b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl ">
+                    <h2 class="title text-2xl text-white font-bold text-center py-4">Rock</h2>
+                </a>
             </div>
             <div
                 class="sub-box w-[25%] h-72 cursor-pointer hover:bg-[#2f2f2f] ease-out duration-300 hover:scale-110 hover:rounded-tl-2xl hover:rounded-br-2xl">
-                <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl">
-                <h2 class="title text-2xl text-white font-bold text-center py-4">Indie</h2>
+                <a href="indie.html">
+                    <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl">
+                    <h2 class="title text-2xl text-white font-bold text-center py-4">Indie</h2>
+                </a>
             </div>
         </div>
 
@@ -229,35 +124,7 @@
             <span
                 class="bg-gradient-to-r from-red-500 to-red-700 text-transparent bg-clip-text font-bold cursor-pointer">
                 MusicCoin</span>
-            <p class="text-sm my-3 text-white">Made with ❤️ by The Byte Squad</p>
-        </div>
-
-        <div class="container mx-auto text-center text-gray-400 py-4 ml-40 my-5">
-            <div>Listen to your favorite music anywhere, anytime.</div>
-            <div class="text-gray-400 mb-4 md:mb-0">© 2023 MusicCoin.xyz, Inc.</div>
-
-        </div>
-
-        <div class="container mx-auto flex flex-col md:flex-row  px-4 w-2/4 ml-36 my-5">
-            <div class="flex space-x-4 my-5">
-                <a href="#" class="text-gray-400 hover:text-white transition duration-150 ease-in-out">About</a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-150 ease-in-out">Contact</a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-150 ease-in-out">Privacy
-                    Policy</a>
-            </div>
-        </div>
-    </footer>
-    <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
-</body>
-
-</html>
-    </section>
-    <footer class="bg-gray-700 py-4 flex ">
-        <div class="logo text-2xl font-semibold font-mono  mx-10 my-5 w-2/5">
-            <span
-                class="bg-gradient-to-r from-red-500 to-red-700 text-transparent bg-clip-text font-bold cursor-pointer">
-                MusicCoin</span>
-            <p class="text-sm my-3">Made with ❤️ by The Byte Squad</p>
+            <p class="text-sm my-3 font-bold text-white">Made with ❤️ by The Byte Squad</p>
         </div>
 
         <div class="container mx-auto text-center text-gray-400 py-4 ml-40 my-5">
