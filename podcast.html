@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicCoin-Podcast</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
 </head>
@@ -49,7 +50,7 @@
     </nav>
     <section class="ted text-white w-10/12 m-auto flex bg-gradient-to-t from-red-600 to-red-800 rounded-2xl">
         <div class="ted-img">
-            <img src="TED_Talks_Podcast_Thumbnail_Audio_600px.png" alt="" class="w-56 rounded-tl-2xl rounded-bl-2xl">
+            <img src="https://pl.tedcdn.com/rss_feed_images/ted_talks_main_podcast/audio.png" alt="" class="w-56 rounded-tl-2xl rounded-bl-2xl">
         </div>
         <div class="ted-content ml-8 flex flex-col justify-center space-y-3">
             <h5 class="font-bold">Podcast</h5>
@@ -59,27 +60,98 @@
 
     <hr class="my-12 w-8/12 m-auto text-gray-300">
 
-    <section class="w-10/12 text-white m-auto">
-        <div class="podcast-box">
-            <div class="podcast flex mt-5 justify-center hover:bg-[#2f2f2f] w-7/12 hover:rounded-tl-3xl">
-                <img src="RobCross_2022V-stageshot.jpg" alt="RobCross" class="w-52 rounded-tl-3xl rounded-br-3xl">
-                <div class="flex flex-col space-y-3 px-5 ">
-                    <h2 class="text-xl font-bold inline">How to be a team player | Rob Cross</h2>
-                    <p class="w-1/2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sit, facere
-                        quidem reprehenderit
-                        repellat voluptatem.</p>
-                    <div>
-                        <i class='bx bx-play-circle text-red-400 text-4xl hover:text-red-300 cursor-pointer'></i>
-                        <span class="mx-3 relative bottom-2.5 font-bold">Mar 11 | 6 min 09 sec</span>
+    <section class="w-10/12 text-white m-auto flex ">
+        <div class="flex flex-col ">
+
+            <div class="podcast-box">
+                <div class="podcast flex mt-5  hover:bg-[#2f2f2f] w-9/12 hover:rounded-tl-3xl cursor-pointer">
+                    <img src="https://talkstar-photos.s3.amazonaws.com/uploads/2e9cab7e-e454-411c-a98a-31389be39d81/RobCross_2022V-stageshot.jpg" alt="RobCross" class="w-52 rounded-tl-3xl rounded-br-3xl">
+                    <div class="flex flex-col space-y-3 px-5 ">
+                        <h2 class="text-xl font-bold inline">How to be a team player | Rob Cross</h2>
+                        <p class="w-1/2">Collaboration in the workplace is more important than ever but it's making us
+                            less productive....... <span class="font-bold">see more</span></p>
+                        <div>
+                            <i class='bx bx-play-circle text-red-400 text-4xl hover:text-red-300 cursor-pointer'></i>
+                            <span class="mx-3 relative bottom-2.5 font-bold">Mar 11 | 6 min 09 sec</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="podcast"></div>
+            </div>
+            <div class="podcast-box mb-10">
+                <div
+                    class="podcast flex mt-5 justify-center hover:bg-[#2f2f2f] w-9/12 hover:rounded-tl-3xl cursor-pointer">
+                    <img src="https://talkstar-photos.s3.amazonaws.com/uploads/157c3a23-f5e0-4e2d-8443-6468fc761892/JulissaPrado_2021V-1350x675.jpg"
+                        alt="RobCross" class="w-52 rounded-tl-3xl rounded-br-3xl">
+                    <div class="flex flex-col space-y-3 px-5 ">
+                        <h2 class="text-xl font-bold inline">Three rules to help you build a successful business |
+                            Julissa Pardo
+                        </h2>
+                        <p class="w-1/2">Have an idea you're yearning to turninto a business? Julissa Prado,
+                            founder..... <span class="font-bold">see
+                                more</span>
+                        </p>
+                        <div>
+                            <i class='bx bx-play-circle text-red-400 text-4xl hover:text-red-300 cursor-pointer'></i>
+                            <span class="mx-3 relative bottom-2.5 font-bold">jan 21 | 7 min 29 sec</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="podcast"></div>
         </div>
-        <div class="about">
+        <div class="about w-3/12 flex flex-col">
+            <h1 class="text-2xl font-bold mb-5">About</h1>
+            <p class="leading-5 font-mono">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, corrupti.
+                Laborum,
+                unde dolore possimus
+                repudiandae maiores id doloremque minima fugiat nisi ex ea. Ipsam hic natus ipsum ut iure, ullam alias
+                odio eum neque illo tempore aspernatur quam quisquam, quia omnis aut dolores. Officiis, ab culpa fugit
+                temporibus aperiam dolor.</p>
+            <div>
+                <span class="bg-gray-700 border-2 border-black px-2 py-1 rounded-3xl relative top-3 ">Technology</span>
+                <span class="bg-gray-700 border-2 border-black px-2 py-1 rounded-3xl relative top-3">Motivation</span>
+                <!-- <span class="bg-gray-700 border-2 border-black px-2 py-1 rounded-3xl relative ">Educational
+                    Podcast</span> -->
+            </div>
+        </div>
+    </section><script>
+      window.addEventListener("load", async () => {
+  // Function to get the value of a cookie by name
+  function getCookie(name) {
+    const cookieString = document.cookie;
+    const cookies = cookieString.split(";");
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      if (cookie.startsWith(`${name}=`)) {
+        return cookie.substring(name.length + 1);
+      }
+    }
+    return null;
+  }
 
-        </div>
-    </section>
+  // Usage example
+  const ethereumAddressfromCookie = getCookie("ethereum_address");
+  if (ethereumAddressfromCookie) {
+    // Use the ethereumAddress value in your code
+    console.log(`Ethereum address: ${ethereumAddressfromCookie}`);
+    const oxAddress = document.querySelector(".ox");
+    if (oxAddress) {
+      const shortenedAddress =
+        ethereumAddressfromCookie.substring(0, 5) +
+        "...." +
+        ethereumAddressfromCookie.substring(
+          ethereumAddressfromCookie.length - 5
+        );
+      oxAddress.textContent = shortenedAddress || "Not Found";
+    }
+  } else {
+    console.log("Ethereum address cookie not found");
+  }
+});
+    </script>
+
+
+  
 </body>
 
 </html>
