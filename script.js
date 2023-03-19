@@ -34,3 +34,4 @@ createAccountButton.addEventListener("click", async () => {
     alert('Please install Metamask to use this feature');
   }
 });
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>UI</title>
+</head>
+<body class="bg-[#191919]">
+    <div class="flex flex-col items-center justify-center h-screen text-white">
+        <h1 class="text-3xl font-bold mb-4">Create MetaData</h1>
+        <div class="flex flex-col space-y-4">
+          <label class="text-lg font-semibold">Name:</label>
+          <input id="name" type="text" class="rounded-md border-gray-300 px-3 py-2 w-96 text-black">
+          <label class="text-lg font-semibold">Description:</label>
+          <input id="description" type="text" class="rounded-md border-gray-300 px-3 py-2 w-96 text-black" >
+          <label class="text-lg font-semibold">Image URL:</label>
+          <input id="image" type="text" class="rounded-md border-gray-300 px-3 py-2 w-96 text-black value="ipfs://"">
+          <label class="text-lg font-semibold">Song URL:</label>
+          <input id="animation" type="text" class="rounded-md border-gray-300 px-3 py-2 w-96 text-black value="ipfs://"">
+        </div>
+        <button id="downloadBtn" class="mt-6 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors">Download Metadata</button>
+      </div>
+
+  <script>
+    const downloadBtn = document.getElementById('downloadBtn');
+
+downloadBtn.addEventListener('click', () => {
+
+  // Get user inputs
+  const name = document.getElementById('name').value;
+  const description = document.getElementById('description').value;
+  const image = document.getElementById('image').value;
+  const animation = document.getElementById('animation').value;
+
+    if (name === '' || description === '' || image === '' || animation === '') {
+    alert('Please fill in all fields before downloading metadata.');
+    return;
+  }
+
+  // Create metadata object
+  const metadata = {
+    name,
+    description,
+    image : `ipfs://${image}`,
+    animation_url: `ipfs://${animation}`
+  };
+
+  // Convert metadata object to JSON string
+  const metadataString = JSON.stringify(metadata, null, 2);
+
+  // Create a new blob with the metadata string
+  const blob = new Blob([metadataString], {type: 'application/json'});
+
+  // Create download link
+  const downloadLink = document.createElement('a');
+  downloadLink.href = window.URL.createObjectURL(blob);
+  downloadLink.download = 'metadata.json';
+
+  // Click download link
+  downloadLink.click();
+
+   nameInput.value = "";
+  descInput.value = "";
+  imgInput.value = "";
+  animInput.value = "";
+});
+
+  </script>
+</body>
+</html>

@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "download": "^8.0.0"
+    "download": "^8.0.0",
+    "web3": "^1.8.2"
   },
   "name": "music",
   "version": "1.0.0",

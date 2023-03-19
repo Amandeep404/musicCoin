@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicCoin-playlist</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#191919]">
+
+    <nav class="flex justify-around">
+        <div class="logo text-4xl font-semibold font-mono p-5 mx-10 my-5">
+            <span
+                class="bg-gradient-to-r from-red-500 to-red-700 text-transparent bg-clip-text font-bold cursor-pointer">
+                MusicCoin</span>
+        </div>
+
+        <div
+            class="search-sec border-2 rounded-3xl w-[400px] text-lg bg-white border-gray-400 text-gray-400 h-10  my-5 relative top-5 right-8 flex items-center">
+            <i class='bx bx-search-alt-2 text-3xl my-1.5 ml-2 text-black'></i>
+            <input type="text" placeholder="Search songs, artists podcasts you love! "
+                class="bg-white w-[450px] mx-4 outline-none text-black">
+        </div>
+
+        <div class="sections text-white">
+            <ul class="flex space-x-8 mr-20">
+                <!-- <li><a href=""></a></li> -->
+                <li class="text-2xl py-5 my-5 font-bold text-gray-300 "><a href="home-page.html"
+                        class="bg-gradient-to-r from-red-500 to-red-700 text-transparent bg-clip-text font-bold cursor-pointer">Music</a>
+                </li>
+                <li class="text-2xl py-5 my-5 font-bold text-gray-300 hover:underline"><a
+                        href="podcast.html">Podcast</a></li>
+                <li class="text-2xl py-5 my-5 font-bold text-gray-300 hover:underline"><a
+                        href="bg-music.html">Background Music</a>
+                </li>
+            </ul>
+        </div>
+        <div class="metamusk-logo  flex justify-between items-center mr-5">
+            <img src="https://img.icons8.com/plasticine/100/null/metamask-logo.png" class="w-10 hover:cursor-pointer" />
+            <!-- <input type="text" placeholder="OX Address" class="bg-[#2f2f2f] rounded-2xl px-2 outline-none text-white "> -->
+            <div class="ox bg-[#2f2f2f] rounded-2xl px-2 outline-none text-white w-36">OX Address</div>
+        </div>
+
+    </nav>
+    <ul class=" mb-12 flex text-white space-x-5 mx-24 list-disc ">
+        <li class="w-auto mx-1 brightness-50 ">Home</li>
+        <li class="w-auto mx-1 brightness-50">Playlist</li>
+        <li class="w-auto mx-1 list-none">New Hindi Songs</li>
+    </ul>
+    <div class="box ">
+
+        <div class="main-box w-11/12  h-70 m-auto flex my-10 ">
+            <div class="sub-box w-[30%] h-72 cursor-pointer relative">
+                <h2 class=" absolute title text-2xl text-white font-bold text-center py-4 z-40 top-16 left-16">New Hindi
+                    Songs
+                </h2>
+                <img src="https://images.unsplash.com/photo-1471478331149-c72f17e33c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                    alt="songs" class="w-4/5 h-52 m-auto mt-1.5 rounded-tl-2xl rounded-br-2xl brightness-50">
+            </div>
+            <div class="flex flex-col w-11/12 ">
+
+                <div class="container text-white ">
+                    <!-- <h1 class="title text-2xl text-white font-bold text-center py-4 p-5">New Hindi Songs</h1> -->
+                    <div class="container max-auto">
+                        <table class="table-auto w-11/12 m-auto  border-collapse border border-gray-400">
+                            <thead>
+                                <tr class="brightness-50">
+                                  <th class="px-4 py-2 text-left">#</th>
+                                  <th class="px-4 py-2">TRACK</th>
+                                  <th class="px-4 py-2">ARTISTS</th>
+                                  <th class="px-4 py-2 text-right">ALBUM</th>
+                                  <th class="px-4 py-2 text-right">DURATION</th>
+                                </tr>
+                              </thead>
+                              <tbody class="cursor-pointer">
+                                <tr class="hover:bg-[#2f2f2f]" onclick="playMusic('Bairiyaa.mp3')">
+                                  <td class="px-4 py-2 hover:underline">1</td>
+                                  <td class="px-4 py-2 hover:underline">Bairiya</td>
+                                  <td class="px-4 py-2 hover:underline">Arijit Singh, Amitabh Bhattacharya, Goldie Sohel</td>
+                                  <td class="px-4 py-2 text-right hover:underline">Bairiya</td>
+                                  <td class="px-4 py-2 text-right hover:underline">4:23</td>
+                                </tr>
+                                <!-- Add more rows here -->
+
+                                    <tr class="hover:bg-[#2f2f2f]" onclick="playMusic('Tere-Liye.mp3')">
+                                        <td class="px-4 py-2 hover:underline">2</td>
+                                        <td class="px-4 py-2 hover:underline">Regent</td>
+                                        <td class="px-4 py-2 hover:underline">Atif Aslam, Amitabh Bhattacharya, Goldie
+                                            Sohel</td>
+                                        <td class=" px-4 py-2 text-right hover:underline">Tere liye</td>
+                                        <td class=" px-4 py-2 text-right hover:underline">4:23</td>
+                                    </tr>
+                                    <script>
+                                        function playMusic(musicFile) {
+                                          const audio = new Audio(musicFile);
+                                          audio.play();
+                                        }
+                                        </script>
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+                <footer class=" ">
+                    <div class="max-w-md mx-auto my-2 mt-60 text-white w-11/12">
+                        <div class="bg-black rounded-lg shadow-lg p-4">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <div class="rounded-lg overflow-hidden">
+
+                                        <img src="https://picsum.photos/50" alt="Album Art">
+                                    </div>
+                                    <div class="ml-4">
+                                        <p class="font-medium">Song Title</p>
+                                        <p class="text-sm">Artist Name</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-backward mr-4"></i>
+                                    <i class="fas fa-play mr-4"></i>
+                                    <i class="fas fa-forward"></i>
+                                </div>
+                            </div>
+                            <div class="">
+                                <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100"
+                                    class="w-full h-2 rounded-lg text-center">
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+                </footer>
+
+
+
+    <script>
+      window.addEventListener("load", async () => {
+  // Function to get the value of a cookie by name
+  function getCookie(name) {
+    const cookieString = document.cookie;
+    const cookies = cookieString.split(";");
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      if (cookie.startsWith(`${name}=`)) {
+        return cookie.substring(name.length + 1);
+      }
+    }
+    return null;
+  }
+
+  // Usage example
+  const ethereumAddressfromCookie = getCookie("ethereum_address");
+  if (ethereumAddressfromCookie) {
+    // Use the ethereumAddress value in your code
+    console.log(`Ethereum address: ${ethereumAddressfromCookie}`);
+    const oxAddress = document.querySelector(".ox");
+    if (oxAddress) {
+      const shortenedAddress =
+        ethereumAddressfromCookie.substring(0, 5) +
+        "...." +
+        ethereumAddressfromCookie.substring(
+          ethereumAddressfromCookie.length - 5
+        );
+      oxAddress.textContent = shortenedAddress || "Not Found";
+    }
+  } else {
+    console.log("Ethereum address cookie not found");
+  }
+});
+    </script>
+              
+</body>
+
+</html>
