@@ -27,7 +27,7 @@ This project aims to revolutionize the music industry by developing a blockchain
 
 
 ## Contributors
-* [Ariiit Saha](http://github.com/rohanroc)
+* [Arijit Saha](http://github.com/rohanroc)
 * [Amandeep Singh](https://github.com/amandeep404)
 * [Priya Singh](https://github.com/PriyaSingh03)
 
